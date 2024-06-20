@@ -1,0 +1,157 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "CdkPythonLambdaDynamodbStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "CdkPythonLambdaDynamodbStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "CdkPythonLambdaDynamodbStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "CdkPythonLambdaDynamodbStack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/3383c0aa5112a950cf619b3c9a719f1760d638396f0a7425db473898259610e3.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "CdkPythonLambdaDynamodbStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "CdkPythonLambdaDynamodbStack.assets"
+      ],
+      "metadata": {
+        "/CdkPythonLambdaDynamodbStack/MyLambdaDynamoDBConstruct/RavaliTestTable": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "MyLambdaDynamoDBConstructRavaliTestTable7DDD1410"
+            }
+          }
+        ],
+        "/CdkPythonLambdaDynamodbStack/MyLambdaDynamoDBConstruct/RavaliTestTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyLambdaDynamoDBConstructRavaliTestTable7DDD1410"
+          }
+        ],
+        "/CdkPythonLambdaDynamodbStack/MyLambdaDynamoDBConstruct/MyLambdaFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyLambdaDynamoDBConstructMyLambdaFunctionServiceRole361F85E2"
+          }
+        ],
+        "/CdkPythonLambdaDynamodbStack/MyLambdaDynamoDBConstruct/MyLambdaFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyLambdaDynamoDBConstructMyLambdaFunctionServiceRoleDefaultPolicy95085171"
+          }
+        ],
+        "/CdkPythonLambdaDynamodbStack/MyLambdaDynamoDBConstruct/MyLambdaFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyLambdaDynamoDBConstructMyLambdaFunctionF8412FBF"
+          }
+        ],
+        "/CdkPythonLambdaDynamodbStack/MyLambdaDynamoDBConstruct/LambdaExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyLambdaDynamoDBConstructLambdaExecutionRoleAB6A2773"
+          }
+        ],
+        "/CdkPythonLambdaDynamodbStack/MyLambdaDynamoDBConstruct/MyApiGateway/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyLambdaDynamoDBConstructMyApiGateway6A6F7369"
+          }
+        ],
+        "/CdkPythonLambdaDynamodbStack/MyLambdaDynamoDBConstruct/MyApiGateway/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyLambdaDynamoDBConstructMyApiGatewayDeployment44C287F0bd434074bba1996c5f2fa16d55790b6b"
+          }
+        ],
+        "/CdkPythonLambdaDynamodbStack/MyLambdaDynamoDBConstruct/MyApiGateway/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyLambdaDynamoDBConstructMyApiGatewayDeploymentStageprod853A0641"
+          }
+        ],
+        "/CdkPythonLambdaDynamodbStack/MyLambdaDynamoDBConstruct/MyApiGateway/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyLambdaDynamoDBConstructMyApiGatewayEndpoint2E123EDA"
+          }
+        ],
+        "/CdkPythonLambdaDynamodbStack/MyLambdaDynamoDBConstruct/MyApiGateway/Default/items/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyLambdaDynamoDBConstructMyApiGatewayitemsD92C17ED"
+          }
+        ],
+        "/CdkPythonLambdaDynamodbStack/MyLambdaDynamoDBConstruct/MyApiGateway/Default/items/POST/ApiPermission.CdkPythonLambdaDynamodbStackMyLambdaDynamoDBConstructMyApiGateway22D7C6E8.POST..items": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyLambdaDynamoDBConstructMyApiGatewayitemsPOSTApiPermissionCdkPythonLambdaDynamodbStackMyLambdaDynamoDBConstructMyApiGateway22D7C6E8POSTitems35EECF48"
+          }
+        ],
+        "/CdkPythonLambdaDynamodbStack/MyLambdaDynamoDBConstruct/MyApiGateway/Default/items/POST/ApiPermission.Test.CdkPythonLambdaDynamodbStackMyLambdaDynamoDBConstructMyApiGateway22D7C6E8.POST..items": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyLambdaDynamoDBConstructMyApiGatewayitemsPOSTApiPermissionTestCdkPythonLambdaDynamodbStackMyLambdaDynamoDBConstructMyApiGateway22D7C6E8POSTitems98DEECA2"
+          }
+        ],
+        "/CdkPythonLambdaDynamodbStack/MyLambdaDynamoDBConstruct/MyApiGateway/Default/items/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyLambdaDynamoDBConstructMyApiGatewayitemsPOSTC224121D"
+          }
+        ],
+        "/CdkPythonLambdaDynamodbStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/CdkPythonLambdaDynamodbStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/CdkPythonLambdaDynamodbStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/CdkPythonLambdaDynamodbStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "CdkPythonLambdaDynamodbStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
